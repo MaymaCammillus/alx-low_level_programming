@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - orint putchar
  * Description : print_putchar
@@ -12,11 +11,12 @@ int main(void)
 	_putchar('p');
 	_putchar('u');
 	_putchar('t');
-	_putchar('c')
+	_putchar('C')
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
 
 	return (0);
+
 }

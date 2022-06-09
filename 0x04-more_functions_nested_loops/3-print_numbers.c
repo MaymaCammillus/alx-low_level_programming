@@ -1,14 +1,15 @@
 #include "main.h"
-
 /**
- * print_numbers - prints numbers
+ * print_numbers - prints number
  */
 
 void print_numbers(void)
 {
-	int k;
+	int x;
 
-	for (k = 0; k < 10; k++)
-		_puchar(k + '0');
+	for (x = 0; x < 10; x++)
+	{
+		_putchar(x + '0');
+	}
 	_putchar('\n');
 }

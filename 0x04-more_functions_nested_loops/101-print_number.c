@@ -1,6 +1,6 @@
 include "main.h"
 /**
- * print_number - Function that prints an integer.
+ * print_number - Function that prints an integer
  * @n: integer to print.
  */
 

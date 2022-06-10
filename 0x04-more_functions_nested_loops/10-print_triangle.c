@@ -1,18 +1,10 @@
 #include "main.h"
 /**
- * print_square - prints a line
+ * print_triangle- prints a line
  * @size: character argument
  */
 
-void print_square(int size)
-{
-#include "main.h"
-/**
- * print_square - prints a line
- * @size: character argument
- */
-
-void print_square(int size)
+void print_triangle(int size)
 {
 int a, b, c;
 if (size <= 0)

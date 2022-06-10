@@ -1,9 +1,10 @@
-include "main.h"
+#include "main.h"
 /**
- * print_number - Function that prints an integer
+ * print_number - Function that prints an integer.
  * @n: integer to print.
+ *
+ * Return: void.
  */
-
 void print_number(int n)
 {
 	unsigned int x;

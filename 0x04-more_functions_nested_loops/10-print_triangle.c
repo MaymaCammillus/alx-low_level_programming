@@ -14,8 +14,8 @@ else
 {
 for (a = 0; a < size; a++)
 {
-for (b = size - 1; b--)
-for (c = a + 1; c--)
+for (b = size - 1; b < size; b--)
+for (c = a + 1; c < size c--)
 {
 _putchar('#');
 }
@@ -23,4 +23,3 @@ _putchar('\n');
 }
 }
 }
-

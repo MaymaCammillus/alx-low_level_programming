@@ -3,6 +3,7 @@ include "main.h"
  * print_number - Function that prints an integer.
  * @n: integer to print.
  */
+
 void print_number(int n)
 {
 	unsigned int x;

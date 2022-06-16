@@ -1,22 +1,14 @@
 #include "main.h"
+#include <string.h>
 /**
  * _strncat - a function that concatenates two strings
- * @dest: Pointer to the destination array where the content is to be copied
- * @src: The string to cpy from
- * @n: n
- * Return: Always 0 (Success)
+ * @dest: chara1
+ * @src: chara2
+ * @n: chara3
+ * Return: string
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, j;
-
-	for (i = 0; dest[i] != '\0'; i++)
-
-	for (j = 0; j < n; j++)
-	{
-		dest[i + j] = src[j];
-		if (src[j] == '\0')
-			j = n;
-	}
+	strncat(dest, scr, n);
 	return (dest);
 }

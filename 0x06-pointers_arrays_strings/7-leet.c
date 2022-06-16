@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
   * leet - Encodes a string into 1337
@@ -11,13 +11,13 @@ char *leet(char *s)
 	char r[5] = {'A', 'E', 'O', 'T', 'L'};
 	char n[5] = {'4', '3', '0', '7', '1'};
 
-	for (i = 0; s[i] != '\0' i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; j < 10; j++)
 		{
 			if (s[i] == r[j])
 			{
-				s[i] = n[j]
+				s[i] = n[j];
 			}
 		}
 	}

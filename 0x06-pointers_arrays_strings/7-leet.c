@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * leet - Encodes a string into 1337
+  * leet - Encodes a string into 1337 peak
   * @s: The string to encode
   * Return: The encoded string
   */

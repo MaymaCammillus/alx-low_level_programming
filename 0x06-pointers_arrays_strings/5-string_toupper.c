@@ -12,7 +12,8 @@ int i = 0;
 for (i = 0; n[i] != '\0'; i++)
 {
 if (n[i] >= 'a' && n[i] <= 'z')
-n[i] = n[i] - 32
+n[i] = n[i] - 32;
+n++;
 }
 return (n);
 }

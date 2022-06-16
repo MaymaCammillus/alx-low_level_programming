@@ -7,6 +7,7 @@
  * @n: chara3
  * Return: string
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
 	strncat(dest, scr, n);

@@ -12,7 +12,7 @@ int i = 0, j;
 while (s[i])
 i++;
 
-for (j = 0; j <= i; j++)
+for (j = 0; j < i; j++)
 {
 if (c == s[j])
 s += j;

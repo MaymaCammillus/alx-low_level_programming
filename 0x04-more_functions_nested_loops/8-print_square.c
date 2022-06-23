@@ -6,19 +6,21 @@
 
 void print_square(int size)
 {
-	int a, b, c;
+	int row, column;
 
 	if (size <= 0)
+	{
 		_putchar('\n');
+	}
 	else
 	{
-		for (a = 0; a < size; a++)
+		for (row = 1; row <= size; row++)
 		{
-		for (b = 0; b < size; b++)
-		{
-			_putchar('#');
-		}
-		_putchar('\n');
+			for (column = 1; column <= size; column++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
 	}
 }

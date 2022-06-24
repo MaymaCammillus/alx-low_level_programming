@@ -1,8 +1,8 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <stdbool.h>
+
 /**
  * coinConverter - Helper function that does all the mathematics
  * @i: Passed in variable from main for calculations
@@ -37,6 +37,7 @@ int coinConverter(int i)
 
 	return (count);
 }
+
 /**
  * main - Takes in exactly one argument for minimum coin count
  * @argc: Number of command line arguments

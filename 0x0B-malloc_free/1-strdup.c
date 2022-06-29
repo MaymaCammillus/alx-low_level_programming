@@ -5,7 +5,7 @@
 *@str: String to be copied
 *Return: Null or Pointer to new string
 */
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	int i = 1, j = 0;
 	char *s;

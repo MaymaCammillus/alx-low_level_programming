@@ -1,4 +1,4 @@
-i#include <stdlib.h>
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * free_grid - function that frees the grid

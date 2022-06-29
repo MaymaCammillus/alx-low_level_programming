@@ -6,3 +6,18 @@
 *Return: Null or Pointer to new string
 */
 char *_strdup(char *str);
+{
+	int i = 1, j = 0;
+	char *s;
+	while str[i]
+		i++;
+	s = (char *)malloc(i * sizeof(char) + 1);
+	if (s == NULL)
+	while (j < i)
+	{
+		s[j] = str[j];
+		j++;
+	}
+	s[j] = '\0';
+	return (s);
+}

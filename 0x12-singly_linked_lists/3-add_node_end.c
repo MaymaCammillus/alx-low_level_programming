@@ -1,69 +1,66 @@
 #include "lists.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <stddef.h>
+#include <string.h>
+
 /**
- * _strlen - gets length of the string
+ * _strlen - returns length of string
  * @s: string
- * Return: length of the string
+ * Return: length of string
  */
+
 int _strlen(const char *s)
 {
-	int n;
+	int len;
 
-	for (n = 0; s[n]; n++)
-		;
-	return (n);
+	len = 0;
+	while (s[len] != '\0')
+	{
+		len++;
+	}
+	return (len);
 }
-/**
- * _strdup - recreation of string duplicate function
- * @src: source of string to duplicate
- * Return: pointer to malloc'd space with copied string
- */
-void *_strdup(const char *src)
-{
-	int len, n;
-	char *dest;
 
-	len = _strlen(src);
-	dest = malloc((len + 1) * sizeof(char));
-	if (dest == NULL)
-		return (NULL);
-	for (n = 0; src[n]; n++)
-		dest[n] = src[n];
-	dest[n] = '\0';
-	return (dest);
-}
 /**
- * add_node_end - add new nodes to the end of the list
- * @head: current place in the list
- * @str: string to add to the head
- * Return: pointer to current position in list
+ * add_node_end - adds a new node at the end of  list_t list
+ * @head: head of linked list
+ * @str: string to be used as data for node
+ * Return: number of elements
  */
+
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new, *current;
-	char *dupstr;
+	list_t *new;
+	char *string;
+	list_t *temp;
 
-	if (str == NULL)
-		return (NULL);
-	dupstr = _strdup(str);
-	if (dupstr == NULL)
-		return (NULL);
+	temp = *head;
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 		return (NULL);
-	new->str = dupstr;
+
+	if (str == NULL)
+		return (NULL);
+
+	string = strdup(str);
+	if (string == NULL)
+	{
+		free(new);
+		return (NULL);
+	}
+
 	new->len = _strlen(str);
-	new->next = NULL;
+	new->str = string;
+
 	if (*head == NULL)
 	{
 		*head = new;
-		return (*head);
+		return (new);
 	}
-	current = *head;
-	while (current->next != NULL)
-		current = current->next;
-	current->next = new;
-	return (*head);
+
+	while (temp->next != NULL)
+	{
+		temp = temp->next;
+	}
+	temp->next = new;
+
+	return (new);
 }

@@ -9,11 +9,11 @@
  */
 int _strlen(const char *s)
 {
-	int j;
+	int n;
 
-	for (j = 0; s[j]; j++)
+	for (n = 0; s[n]; n++)
 		;
-	return (j);
+	return (n);
 }
 /**
  * _strdup - recreation of string duplicate function
@@ -22,16 +22,16 @@ int _strlen(const char *s)
  */
 void *_strdup(const char *src)
 {
-	int len, j;
+	int len, n;
 	char *dest;
 
 	len = _strlen(src);
 	dest = malloc((len + 1) * sizeof(char));
 	if (dest == NULL)
 		return (NULL);
-	for (j = 0; src[j]; j++)
-		dest[j] = src[j];
-	dest[j] = '\0';
+	for (n = 0; src[n]; n++)
+		dest[n] = src[n];
+	dest[n] = '\0';
 	return (dest);
 }
 /**

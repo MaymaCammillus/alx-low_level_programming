@@ -13,7 +13,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	int j, res;
 
 	res = 0;
-	for j = 8 * sizeof(j) - 1; j >= 0; j--)
+	for (j = 8 * sizeof(n) - 1; j >= 0; j--)
 		if (((n ^ m) >> j) & 1)
 			res++;
 	return (res);
